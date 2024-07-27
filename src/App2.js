@@ -1,15 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App2() {
   return (
     <div className="App">
       
 
-    vikas chaudhary
+   Dice Academy
+
       
     </div>
   );
 }
 
-export default App;
+export default App2;

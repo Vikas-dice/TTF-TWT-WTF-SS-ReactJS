@@ -1,15 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Mynintrobutton() {
   return (
     <div className="App">
       
 
-    vikas chaudhary
+    <button className='btn'>click me </button>
       
     </div>
   );
 }
 
-export default App;
+export default Mynintrobutton;
