@@ -6,5 +6,8 @@ class - props ( parent-child,child-parent,child-children)
 functional - props(parent-child,child-parent,child-children)
 component life cycle  (class and functional)
 
+see you tomorrow
+
+
 
 
