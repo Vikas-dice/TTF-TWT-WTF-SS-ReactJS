@@ -1,0 +1,14 @@
+
+
+class component 
+
+stop watch ?
+
+button 1 - start
+button 2 - stop
+button 3 - reset 
+
+functional component
+button 1 - start
+button 2 - stop
+button 3 - reset 

@@ -1,0 +1,16 @@
+
+
+
+q1- what is react ? is it a framework or lib ? diff bw framework and lib ?
+q2- folder structure of React App?
+q3- What is virtual dom in react?
+q4- What are components?
+q5- class component vs functional components?
+q6- what is a jsx file in react?
+q7- define component life cycle in React?
+q8- What is state in react ? why do we need state object in react ? 
+q9- what are hooks in functionals components?
+q10- Create a counter app in both class andf functional component in react?
+
+
+
