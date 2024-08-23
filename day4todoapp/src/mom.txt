@@ -1,0 +1,32 @@
+
+
+React
+
+- React Basic intro
+-folder structure
+-dom virtual dom
+-components (class and fucntional)
+-data communication (state and props)
+-props(clas and fucntional)
+-props ( parent-child , child-parent,child-children)
+-state (class and fucntional)
+-component life cycle (class)
+-component life cycle (fucntional)
+
+
+misc- portals , styling css 
+
+
+Date 23rd aug 2024
+
+Basic TODO App (Class and fucntional)
+
+util - bootstrap 
+
+TODO app - CRUD Operation 
+C=create
+r=read
+u=update
+d=delete 
+
+
