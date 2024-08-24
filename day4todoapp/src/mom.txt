@@ -30,3 +30,21 @@ u=update
 d=delete 
 
 
+Date 24th aug 2024
+
+CRUD Operation -TODO APP 
+
+read 
+create 
+
+Validation 
+delete 
+update 
+
+todo - class components
+CRUD 
+
+
+
+
+

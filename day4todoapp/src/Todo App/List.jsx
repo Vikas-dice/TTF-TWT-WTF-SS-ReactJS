@@ -9,7 +9,26 @@ export default function (props) {
 
             {
                 props.todos.length>0?props.todos.map((item,index)=>{
-                 return   <li className="list-group-item" key={index} >{item}</li>
+                 return   <li className="list-group-item d-flex justify-content-between" key={index} >
+                  <div> {item}</div>
+                  <div className=''>
+                    <button 
+                    className='btn-danger'
+                    onClick={()=>props.deletetodo(item)}
+                    
+                    >Delete</button>
+                   
+                    <button className='btn-warning mx-3'
+                    onClick={()=>props.edittodo(item,index)}
+                    
+                    
+                    >Edit</button>
+                  
+                
+                  </div>
+                 
+                  
+                  </li>
 
                 }) :<li className="list-group-item">No Todo</li>
 

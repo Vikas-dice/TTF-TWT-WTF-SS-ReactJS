@@ -14,6 +14,29 @@ function App() {
     
     
   }
+
+  const deletetodo=(value)=>{
+    console.log(value);
+    
+    console.log("delete todo fired ");
+
+    const filtertodos=todos.filter((todo)=>todo !==value);
+    console.log(filtertodos);
+    settodos(filtertodos)
+    
+
+    // todos.splice(index,2)
+
+    // settodos([...todos])
+    
+  }
+
+  const edittodo=(value,index)=>{
+    console.log(value,index);
+    
+    console.log("edit todo fired ");
+    
+  }
   // const addtodo=(value)=>{
   //   console.log(value);
   //   // todos.push(value)
@@ -25,7 +48,7 @@ function App() {
   return (
     <div className="App">
    <Input addtodo={addtodo}/>
-   <List todos={todos}/>
+   <List todos={todos} deletetodo={deletetodo} edittodo={edittodo}/>
     </div>
   );
 }
