@@ -1,0 +1,13 @@
+.app{
+  height: 100vh;
+  width: 100vw;
+}
+.app.dark{
+  background-color: black;
+  color:antiquewhite;
+}
+
+.app.light{
+  background-color: bisque;
+  color:red;
+}

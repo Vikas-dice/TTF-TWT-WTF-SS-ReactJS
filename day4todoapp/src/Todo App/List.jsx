@@ -17,9 +17,16 @@ export default function (props) {
                     onClick={()=>props.deletetodo(item)}
                     
                     >Delete</button>
+
+                  
+                    
                    
                     <button className='btn-warning mx-3'
+
+
                     onClick={()=>props.edittodo(item,index)}
+
+                
                     
                     
                     >Edit</button>

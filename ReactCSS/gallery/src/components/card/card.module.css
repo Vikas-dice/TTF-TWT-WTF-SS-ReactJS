@@ -1,0 +1,17 @@
+.card{
+    background-color: rgb(167, 86, 86);
+    color: white;
+    margin-top: 50px;
+    height: 400px;
+    width: 200px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    overflow: auto;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+}
