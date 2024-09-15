@@ -11,8 +11,14 @@ const Todoprovider = ({children}) => {
         newtodo.splice(index,1);
         setTodo(newtodo)
     }
+     
+  const updatetodo=(index,updatedTask)=>{
+    const newtodo=[...todo];
+    newtodo[index]=updatedTask;
+    setTodo(newtodo)
+  }
   return (
-    <taskcontext.Provider value={{todo,addtodo,removetodo}}>
+    <taskcontext.Provider value={{todo,addtodo,removetodo, updatetodo}}>
     {children}
     </taskcontext.Provider>
   )

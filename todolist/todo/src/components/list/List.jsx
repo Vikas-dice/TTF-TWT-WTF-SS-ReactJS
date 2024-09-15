@@ -1,20 +1,36 @@
-import React, { useContext } from 'react'
-import { taskcontext } from '../../TodoContext'
+import React, { useContext, useState } from 'react';
+import { taskcontext } from '../../TodoContext';
 
 const List = () => {
-    const {todo,removetodo}=useContext(taskcontext);
-  return (
-  <ul>
-    {
-        
-        todo.map((task,index)=>(
-            <li key={index}>{task}  
-            <button onClick={()=>removetodo(index)}>done</button>
-                </li>
-        ))
-    }
-  </ul>
-  )
-}
+  const [editId, setEditId] = useState(null);
+  const [newtask, setnewtask] = useState("");
+  const { todo, removeTodo, updatetodo } = useContext(taskcontext);
+ const editClick=(index)=>{
 
-export default List
+  setEditId(index);
+ }
+  
+  return (
+    <ul>
+      {todo.map((task, index) => (
+        <li key={index}>
+          {editId === index ? (
+            <>
+           <input type="text" value={newtask} onChange={(e)=>{setnewtask(e.target.value)}}/>
+              <button onClick={() => {updatetodo(index, newtask);setEditId(null)}}>update</button>
+             
+            </>
+          ) : (
+            <>
+              <span>{task}</span>
+              <button onClick={() => {  setnewtask(task);editClick(index)}}>edit</button>
+              <button onClick={() => removeTodo(index)}>done</button>
+            </>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+export default List;
